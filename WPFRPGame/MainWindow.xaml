@@ -1,0 +1,30 @@
+﻿<Window x:Class="WPFRPGame.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFRPGame"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock x:Name="WinBox" HorizontalAlignment="Left" Margin="365,55,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="Door1" Content="Door 1" HorizontalAlignment="Left" Margin="89,198,0,0" VerticalAlignment="Top" Click="Door1_Click" Height="81" Width="40"/>
+        <Button x:Name="Door2" Content="Door 2" HorizontalAlignment="Left" Margin="175,197,0,0" VerticalAlignment="Top" Click="Door2_Click" Height="82" Width="42"/>
+        <Button x:Name="Door3" Content="Door 3" HorizontalAlignment="Left" Margin="250,198,0,0" VerticalAlignment="Top" Click="Door3_Click" Height="81" Width="45"/>
+        <Button x:Name="NewGame" Content="New Game" HorizontalAlignment="Left" Margin="365,119,0,0" VerticalAlignment="Top" Click="NewGame_Click" Height="59" Width="85"/>
+        <TextBlock x:Name="Door1Info" HorizontalAlignment="Left" Margin="84,306,0,0" TextWrapping="Wrap" Text="Closed" VerticalAlignment="Top" Width="45" Height="75"/>
+        <TextBlock x:Name="Door2Info" HorizontalAlignment="Left" Margin="172,306,0,0" TextWrapping="Wrap" Text="Closed" VerticalAlignment="Top" Width="45" Height="75"/>
+        <TextBlock x:Name="Door3Info" HorizontalAlignment="Left" Margin="250,306,0,0" TextWrapping="Wrap" Text="Closed" VerticalAlignment="Top" Width="45" Height="75"/>
+        <Button x:Name="DoorKeep" Content="Keep" HorizontalAlignment="Left" Margin="99,119,0,0" VerticalAlignment="Top" Click="DoorKeep_Click" Height="51" Width="81"/>
+        <Button x:Name="DoorSwitch" Content="Switch" HorizontalAlignment="Left" Margin="200,119,0,0" VerticalAlignment="Top" Click="DoorSwitch_Click" Height="51" Width="72"/>
+        <TextBlock x:Name="LoseBox" HorizontalAlignment="Left" Margin="250,55,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top"/>
+        <Button x:Name="AutoPlay" Content="Always KEEP" HorizontalAlignment="Left" Margin="526,85,0,0" VerticalAlignment="Top" Click="AutoPlay_Click"/>
+        <Button x:Name="Autoplay1" Content="Always SWITCH" HorizontalAlignment="Left" Margin="526,130,0,0" VerticalAlignment="Top" Click="Autoplay1_Click"/>
+        <TextBox x:Name="PlayBox" HorizontalAlignment="Left" Margin="526,183,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="120" TextChanged="PlayBox_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="526,162,0,0" TextWrapping="Wrap" Text="How Many Plays?" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="250,34,0,0" TextWrapping="Wrap" Text="Games Lost" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="365,37,0,0" TextWrapping="Wrap" Text="Games Won" VerticalAlignment="Top"/>
+        <TextBlock x:Name="ErrorBox" HorizontalAlignment="Left" Margin="526,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
